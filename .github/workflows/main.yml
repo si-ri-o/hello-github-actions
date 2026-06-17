@@ -2,15 +2,15 @@ name: Hello GitHub Actions
 
 on:
   push:
-	branches:
-      - 'main'
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
-      - uses: actions/checkout@v6
- 
+      - uses: actions/checkout@v4
+
       - name: Run a one-line script
-        run: echo Hello GitHub Actions!!
+        run: echo "Hello GitHub Actions!!"
